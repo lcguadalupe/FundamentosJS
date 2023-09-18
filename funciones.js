@@ -57,3 +57,25 @@ mayuscula('HELLO');
  const duplica = num => num * 2;
  const doble = duplica(36);
  console.log(doble);
+
+/* function duplica(num){
+    return num * 2;
+ }*/
+
+ // Funciones con parametros opcionales
+ const welcomeToMexico = (user = 'Invitado') => {
+    console.log(`Bienvenido a México ${ user }`);
+ }
+
+ welcomeToMexico();
+ welcomeToMexico("Batman");
+
+ //parametros con nombre
+ const welcomeToUtt = (user = 'invitado',
+                      city = 'México') => {
+    console.log(`Bienvenido ${ user } de ${ city }`)
+}
+
+welcomeToUtt();
+welcomeToUtt('Bruce Wayne', 'Gotham');
+welcomeToMexico(city = 'Metropolis', user = 'Superman' );
